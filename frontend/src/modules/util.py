@@ -1,7 +1,8 @@
+import os
 import requests
 import json
 
-BASE_URL = 'http://backend:5000'
+BASE_URL = os.getenv('BASE_URL')
 
 def login(user_email, user_password):
     response = requests.post(f"{BASE_URL}/api/auth/login", json={"email": user_email, "password": user_password})
