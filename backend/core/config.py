@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     FLASK_ENV: str = "development"
     DEBUG: bool = False
     TESTING: bool = False
-    BASE_URL: str = "http://localhost:5000"
+    BASE_URL: str = os.getenv("BASE_URL")
     
     # Supabase Configuration
     SUPABASE_URL: str
