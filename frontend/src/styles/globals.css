@@ -1,0 +1,60 @@
+.stHorizontalBlock  {
+    justify-content: center;
+    align-items: center;
+}
+    
+.st-key-chat-input-container {
+    background-color: rgba(38, 39, 48, 0.25);
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+
+.st-key-warehouse-home-buttons {
+    background-color: rgba(38, 39, 48, 0.25);
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+    
+section[data-testid="stSidebar"] {
+    width: 100px !important;
+}
+
+.st-key-metrics-container {
+    background-color: rgba(38, 39, 48, 1);
+    border-radius: 10px;
+    padding: 15px 0px 22px 0px;
+}
+    
+.st-key-logout-button {
+    position: fixed;
+    bottom: 20px;
+}
+
+.st-key-recent-chats {
+    display: flex;
+    gap: 0px;
+    max-height: 300px;
+    overflow-x: hidden;
+
+}
+    
+.st-key-recent-chats > div > .stButton {
+    max-height: 35px;
+}
+    
+.st-key-teste {
+    display: flex;
+    gap: 0px;
+}
+
+.st-key-homepage-hero {
+    margin: 75px auto 25px;
+}
+    
+.st-key-homepage-intro {
+    margin: 25px auto 50px;
+}
+
+.stAppHeader {
+    display: none;
+}

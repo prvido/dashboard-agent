@@ -1,0 +1,3620 @@
+[
+   {
+      "event":"response.created",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.created"
+      }
+   },
+   {
+      "event":"response.in_progress",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_item.added",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.function_call_arguments.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.function_call_arguments.done",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_item.done",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "arguments":"{}",
+                  "call_id":"call_0XGRiBOZmh37jv2UEuxMGo2f",
+                  "name":"list_warehouses",
+                  "type":"function_call",
+                  "id":"fc_6808da83dc1c8191a9cc495d756f85ce01033e59b173b5c9",
+                  "status":"completed"
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.completed",
+      "data":{
+         "response":{
+            "id":"resp_6808da8331ec8191a1107c6d1f5e9a8501033e59b173b5c9",
+            "created_at":1745410691.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "arguments":"{}",
+                  "call_id":"call_0XGRiBOZmh37jv2UEuxMGo2f",
+                  "name":"list_warehouses",
+                  "type":"function_call",
+                  "id":"fc_6808da83dc1c8191a9cc495d756f85ce01033e59b173b5c9",
+                  "status":"completed"
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"completed",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":{
+               "input_tokens":171,
+               "input_tokens_details":{
+                  "cached_tokens":0
+               },
+               "output_tokens":13,
+               "output_tokens_details":{
+                  "reasoning_tokens":0
+               },
+               "total_tokens":184
+            },
+            "user":null,
+            "service_tier":"default",
+            "store":true
+         },
+         "type":"response.completed"
+      }
+   },
+   {
+      "event":"internal.process.tool_execution_started",
+      "data":{
+         "tool_name":"list_warehouses",
+         "result":{
+            
+         },
+         "type":"internal.process.tool_execution_started"
+      }
+   },
+   {
+      "event":"internal.process.tool_execution_completed",
+      "data":{
+         "tool_name":"list_warehouses",
+         "result":{
+            "status":"success",
+            "result":[
+               {
+                  "id":"fc30911c-0c2b-43cd-b14e-a893f6e1b5cc",
+                  "name":"E-commerce",
+                  "description":"E-commerce statistics warehouse",
+                  "url":"https://pvzksrsakhuvnxahclqa.supabase.co/storage/v1/object/public/uploads/warehouses/fc30911c-0c2b-43cd-b14e-a893f6e1b5cc.duckdb?"
+               }
+            ]
+         },
+         "type":"internal.process.tool_execution_completed"
+      }
+   },
+   {
+      "event":"response.created",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.created"
+      }
+   },
+   {
+      "event":"response.in_progress",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_item.added",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.content_part.added",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o ar",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\",",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.delta",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico.",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_text.done",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico.",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.content_part.done",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico.",
+                        "type":"output_text"
+                     }
+                  ]
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.output_item.done",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "id":"msg_6808da85db38819198a7c6546f93fb8301033e59b173b5c9",
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico.",
+                        "type":"output_text"
+                     }
+                  ],
+                  "role":"assistant",
+                  "status":"completed",
+                  "type":"message"
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"in_progress",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":null,
+            "user":null,
+            "service_tier":"auto",
+            "store":true
+         },
+         "type":"response.in_progress"
+      }
+   },
+   {
+      "event":"response.completed",
+      "data":{
+         "response":{
+            "id":"resp_6808da8569588191a81bad20bba9929f01033e59b173b5c9",
+            "created_at":1745410693.0,
+            "error":null,
+            "incomplete_details":null,
+            "instructions":"# Data Analyst\n\nYou are a Data Analyst called Virgo that has access to an users data warehouses with several datasets (tables).\n\nEach warehouse is stored in a `.duckdb` file.\n\nYour goal is to help the user with his data analystic questions and requests.",
+            "metadata":{
+               
+            },
+            "model":"gpt-4.1-nano-2025-04-14",
+            "object":"response",
+            "output":[
+               {
+                  "id":"msg_6808da85db38819198a7c6546f93fb8301033e59b173b5c9",
+                  "content":[
+                     {
+                        "annotations":[
+                           
+                        ],
+                        "text":"Voc\u00ea tem dispon\u00edvel o armaz\u00e9m de dados chamado \"E-commerce\", que cont\u00e9m estat\u00edsticas relacionadas ao com\u00e9rcio eletr\u00f4nico.",
+                        "type":"output_text"
+                     }
+                  ],
+                  "role":"assistant",
+                  "status":"completed",
+                  "type":"message"
+               }
+            ],
+            "parallel_tool_calls":false,
+            "temperature":1.0,
+            "tool_choice":"auto",
+            "tools":[
+               {
+                  "name":"list_warehouses",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "q":{
+                           "type":"string",
+                           "description":"Optional search query to filter warehouses by name or description"
+                        }
+                     },
+                     "required":[
+                        
+                     ],
+                     "additionalProperties":false
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Use this tool to see the warehouses and tables the user have access to"
+               },
+               {
+                  "name":"execute_query",
+                  "parameters":{
+                     "type":"object",
+                     "properties":{
+                        "database_path":{
+                           "type":"string",
+                           "description":"Path or URL to the DuckDB database file"
+                        },
+                        "query":{
+                           "type":"string",
+                           "description":"SQL query to execute"
+                        }
+                     },
+                     "required":[
+                        "database_path",
+                        "query"
+                     ]
+                  },
+                  "strict":true,
+                  "type":"function",
+                  "description":"Execute a SQL query on a DuckDB database"
+               }
+            ],
+            "top_p":1.0,
+            "max_output_tokens":null,
+            "previous_response_id":null,
+            "reasoning":{
+               "effort":null,
+               "summary":null
+            },
+            "status":"completed",
+            "text":{
+               "format":{
+                  "type":"text"
+               }
+            },
+            "truncation":"disabled",
+            "usage":{
+               "input_tokens":308,
+               "input_tokens_details":{
+                  "cached_tokens":0
+               },
+               "output_tokens":25,
+               "output_tokens_details":{
+                  "reasoning_tokens":0
+               },
+               "total_tokens":333
+            },
+            "user":null,
+            "service_tier":"default",
+            "store":true
+         },
+         "type":"response.completed"
+      }
+   }
+]
