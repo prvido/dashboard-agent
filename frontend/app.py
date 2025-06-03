@@ -19,7 +19,7 @@ if "ids" not in st.session_state:
         "dataset_id": None,
         "chat_id": None,
         "agent_id": "33e8ffcc-d3da-4979-98a5-a339bec744ab",
-        "model_id": "gpt-4o-mini"
+        "model_id": "gpt-4o"
     }
 
 if "messages" not in st.session_state:
