@@ -155,7 +155,6 @@ class ChatPage(BasePage):
                     tool_message_placeholder = assistant_message.empty()
                     tool_name = data['tool_name']
                     tool_message_placeholder.markdown(f'*Executing tool: {tool_name}*')
-                    time.sleep(5)
 
                 elif event == 'internal.process.tool_execution_completed':
                     tool_name = data['tool_name']
@@ -192,8 +191,5 @@ class ChatPage(BasePage):
                         for content in item['content']:
                             if content['type'] == 'output_text':
                                 placeholder.markdown(content['text'])
-                
-                elif event == 'internal.process.completed':
-                    st.rerun()
 
 ChatPage()
